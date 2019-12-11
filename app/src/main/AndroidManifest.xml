@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dingtao.rrmmp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@drawable/xingxing1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/xingxing1"
+        android:supportsRtl="true"
+        android:name="com.wd.mvp.MyApp"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.bw.health_homepage.view.activity.PublishActivity"/>
+
+        <activity android:name="com.bw.health_homepage.view.activity.FindSickCircleActivity"/>
+        <activity android:name="com.bw.health_homepage.view.activity.SearchActivity"/>
+        <activity android:name="com.bw.health_knowledge.activity.Drug_Activity"></activity>
+        <activity android:name="com.bw.health_knowledge.activity.Disease_Activity"></activity>
+        <activity android:name="com.bw.health_knowledge.activity.Knowledge_Activity"></activity>
+        <activity android:name="com.bw.health_homepage.view.activity.MyActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
