@@ -19,6 +19,9 @@ public class VideoFragment extends BaseFragment {
 
     }
 
+
+
+    
     @Override
     protected void initView() {
 
